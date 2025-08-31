@@ -1,6 +1,7 @@
 {
   "name": "duck-search-vercel",
   "version": "1.0.0",
+  "type": "module",
   "main": "api/search.js",
   "license": "MIT",
   "dependencies": {

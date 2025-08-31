@@ -1,4 +1,4 @@
-import duckduckgo from "duck-duck-scrape";
+import { search } from "duck-duck-scrape";
 
 export default async function handler(req, res) {
   const { q } = req.query;
@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const results = await duckduckgo.search(q);
+    const results = await search(q);
 
     if (!results.results.length) {
       return res.status(404).json({ error: "No results found" });
