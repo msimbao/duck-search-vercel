@@ -1,6 +1,9 @@
 {
-  "name": "duck-search-vercel",
-  "version": "1.0.0",
-  "type": "module",
-  "dependencies": {}
+"name": "duck-search-vercel",
+"version": "1.0.0",
+"private": true,
+"type": "module",
+"scripts": {
+"dev": "vercel dev"
+}
 }
